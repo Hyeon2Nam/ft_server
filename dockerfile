@@ -11,7 +11,7 @@ RUN apt-get update && apt-get -y install \
     php-mbstring \
     vim
 
-COPY    ./src/test.sh ./
+COPY    ./src/run.sh ./
 COPY	./src/default ./
 COPY	./src/wp-config.php var/www/html/wordpress/
 COPY	./src/sql.sh ./
