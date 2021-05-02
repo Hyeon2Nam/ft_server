@@ -11,11 +11,11 @@ RUN apt-get update && apt-get -y install \
     php-mbstring \
     vim
 
-COPY    ./src/run.sh ./
-COPY	./src/default ./
-COPY	./src/wp-config.php var/www/html/wordpress/
-COPY	./src/sql.sh ./
-COPY	./src/config.inc.php ./
+COPY    ./srcs/run.sh ./
+COPY	./srcs/default ./
+COPY	./srcs/wp-config.php var/www/html/wordpress/
+COPY	./srcs/sql.sh ./
+COPY	./srcs/config.inc.php ./
 
 EXPOSE 80 443
 
