@@ -2,7 +2,6 @@
 
 #권한 설정
 chmod 775 /run.sh
-chown -R www-data:www-data /var/www/
 chmod -R 755 /var/www
 
 #openssl
@@ -35,7 +34,5 @@ mv config.inc.php var/www/html/phpmyadmin/
 service nginx start
 service php7.3-fpm start
 service mysql start
-
-mysql < var/www/html/phpmyadmin/sql/create_tables.sql
 
 bash
