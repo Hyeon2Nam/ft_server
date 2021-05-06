@@ -10,8 +10,6 @@ mv localhost.dev.crt etc/ssl/certs/
 mv localhost.dev.key etc/ssl/private/
 chmod 600 etc/ssl/certs/localhost.dev.crt etc/ssl/private/localhost.dev.key
 mv default ./etc/nginx/sites-available/default
-
-# php-fpm
 mv /var/www/html/* ./
 
 #wordpress
